@@ -1,0 +1,20 @@
+<h1>Loops With Volume</h1>
+
+<h3>Here are all the Kardashians</h3>
+
+<ul>
+  <% kardashians.forEach( function(kardashian) { %>
+    <li>
+      <% if (louder) { %>
+        <%= kardashian.toUpperCase() %>
+      <% } else { %>
+        <%= kardashian.toLowerCase() %> (shh)
+      <% } %>
+    </li>
+  <% }); %>
+</ul>
+
+<a href='/loops-louder'>A little louder?</a>
+<a href='/loops-quieter'>A little quieter?</a>
+
+<a href='/'>Back home</a>
